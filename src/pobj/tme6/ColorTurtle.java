@@ -35,6 +35,14 @@ public class ColorTurtle extends Turtle implements IColorTurtle{
 		couleur=color;
 	}
 	
+	public int getX() {
+		return super.getX();
+	}
+	
+	public int getY() {
+		return super.getY();
+	}
+	
 	public void draw(int x1, int y1, int x2, int y2) {
 		System.out.println(x1+" "+y1+" "+x2+" "+y2+" "+couleur.toString());
 	}

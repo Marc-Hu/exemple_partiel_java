@@ -46,17 +46,9 @@ public class Turtle implements ITurtle {
 		this.y = y;
 	}
 
-	public void setDirectionCourante(int directionCourante) {
-		this.directionCourante = directionCourante;
-	}
-
-	public void setCrayonLeve(boolean crayonLeve) {
-		this.crayonLeve = crayonLeve;
-	}
-
 	@Override
 	public void turn(int angle) {
-		directionCourante = angle;
+		directionCourante += angle;
 	}
 
 	@Override
